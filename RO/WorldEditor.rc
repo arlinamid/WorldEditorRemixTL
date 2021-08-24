@@ -416,6 +416,19 @@ END
 #endif    // Coreano (Corea del Sud) resources
 /////////////////////////////////////////////////////////////////////////////
 
+BEGIN_MESSAGE_MAP(CDialogBackgroundDlg, CDialog)
+   ON_WM_ERASEBKGND()
+END_MESSAGE_MAP()
+
+BOOL CDialogBackgroundDlg::OnEraseBkgnd(CDC* pDC)
+{
+   CRect r;
+   pDC->GetClipBox(&r);
+
+   pDC->FillSolidRect(r, RGB(255,0,255)); //ugly magenta background
+   return TRUE;
+}
+
 
 /////////////////////////////////////////////////////////////////////////////
 // Rumeno resources

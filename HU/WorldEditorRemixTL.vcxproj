@@ -64,6 +64,7 @@
     <Image Include="..\Sample\res\map_envi.bmp" />
     <Image Include="..\Sample\res\map_environment.bmp" />
     <Image Include="..\Sample\res\map_file.bmp" />
+    <Image Include="..\Sample\res\map_file.png" />
     <Image Include="..\Sample\res\map_object.bmp" />
     <Image Include="..\Sample\res\map_terrain.bmp" />
     <Image Include="..\Sample\res\map_terrain_brush_down.bmp" />

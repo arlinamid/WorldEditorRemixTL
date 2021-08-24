@@ -1,6 +1,6 @@
 // Microsoft Visual C++ generated resource script.
 //
-#include "../Sample/resource.h"
+#include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Coreano (Corea del Sud) resources
+// Korean (Korea) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
@@ -154,52 +154,6 @@ IDB_AMBIENCE_DISTANCE   BITMAP                  "..\\Sample\\res\\ambience_dista
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Menu
-//
-
-IDR_MAINFRAME MENU
-BEGIN
-    POPUP "File"
-    BEGIN
-        MENUITEM "Exit",                        ID_APP_EXIT
-    END
-    POPUP "Edit"
-    BEGIN
-        MENUITEM "Undo...\tCtrl+Z",             ID_EDIT_UNDO
-        MENUITEM "Redo...\tCtrl+Y",             ID_EDIT_REDO
-        MENUITEM SEPARATOR
-        MENUITEM "Cut...\tCtrl+X",              ID_EDIT_CUT
-        MENUITEM "Copy...\tCtrl+C",             ID_EDIT_COPY
-        MENUITEM "Paste...\tCtrl+V",            ID_EDIT_PASTE
-    END
-    POPUP "View"
-    BEGIN
-        MENUITEM "Toolbar",                     ID_VIEW_TOOLBAR
-        MENUITEM "Statusbar",                   ID_VIEW_STATUS_BAR
-        MENUITEM SEPARATOR
-        POPUP "Render Mode"
-        BEGIN
-            MENUITEM "Solid",                       ID_VIEW_RENDERING_MODE_SOLID
-            MENUITEM "Wire Frame",                  ID_VIEW_RENDERING_MODE_WIRE_FRAME
-        END
-        MENUITEM "About Box(F11)",              ID_VIEW_INFO_BOX
-        MENUITEM SEPARATOR
-        MENUITEM "Toolbar(&T)",                 ID_VIEW_TOOLBAR
-        MENUITEM "Map Control Bar",             ID_VIEW_MAP
-        MENUITEM "Objects Control Bar",         ID_VIEW_OBJECT
-        MENUITEM "Effect Control Bar",          ID_VIEW_EFFECT
-        MENUITEM SEPARATOR
-        MENUITEM "Perspective Adjust",          ID_VIEW_DLG_PERSPECTIVE
-    END
-    POPUP "Info"
-    BEGIN
-        MENUITEM "WorldEditor About...",        ID_APP_ABOUT
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // Accelerator
 //
 
@@ -302,7 +256,7 @@ END
 STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
+    AFX_IDS_IDLEMESSAGE     "Varakozas"
 END
 
 STRINGTABLE
@@ -317,112 +271,158 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_FILE_NEW             "New File"
-    ID_FILE_OPEN            "Redo"
-    ID_FILE_CLOSE           "Close File"
-    ID_FILE_SAVE            "Save File"
-    ID_FILE_SAVE_AS         "Save File as"
-    ID_FILE_PAGE_SETUP      "Print Settings"
-    ID_FILE_PRINT_SETUP     "Print Settings"
-    ID_FILE_PRINT           "Print"
-    ID_FILE_PRINT_PREVIEW   "Print Preview"
+    ID_FILE_NEW             "Uj fajl"
+    ID_FILE_OPEN            "Megnyitas"
+    ID_FILE_CLOSE           "Bezaras"
+    ID_FILE_SAVE            "Mentes"
+    ID_FILE_SAVE_AS         "Mentes maskent"
+    ID_FILE_PAGE_SETUP      "Nyomtatasi oldal beallitas"
+    ID_FILE_PRINT_SETUP     "Nyomtatas beallitas"
+    ID_FILE_PRINT           "Nyomtatas"
+    ID_FILE_PRINT_PREVIEW   "Nyomtatasi el?nezet"
 END
 
 STRINGTABLE
 BEGIN
-    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
-    ID_APP_EXIT             "Save Document?"
+    ID_APP_ABOUT            "Programinformaciok, verzioinformaciok, szerz?i jogok. N Informacio"
+    ID_APP_EXIT             "Dokumentum mentese?"
 END
 
 STRINGTABLE
 BEGIN
-    ID_FILE_MRU_FILE1       "Open Document:"
-    ID_FILE_MRU_FILE2       "Open Document:"
-    ID_FILE_MRU_FILE3       "Open Document:"
-    ID_FILE_MRU_FILE4       "Open Document:"
-    ID_FILE_MRU_FILE5       "Open Document:"
-    ID_FILE_MRU_FILE6       "Open Document:"
-    ID_FILE_MRU_FILE7       "Open Document:"
-    ID_FILE_MRU_FILE8       "Open Document:"
-    ID_FILE_MRU_FILE9       "Open Document:"
-    ID_FILE_MRU_FILE10      "Open Document:"
-    ID_FILE_MRU_FILE11      "Open Document:"
-    ID_FILE_MRU_FILE12      "Open Document:"
-    ID_FILE_MRU_FILE13      "Open Document:"
-    ID_FILE_MRU_FILE14      "Open Document:"
-    ID_FILE_MRU_FILE15      "Open Document:"
-    ID_FILE_MRU_FILE16      "Open Document:"
+    ID_FILE_MRU_FILE1       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE2       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE3       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE4       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE5       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE6       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE7       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE8       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE9       "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE10      "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE11      "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE12      "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE13      "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE14      "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE15      "Dokumentum megnyitasa:"
+    ID_FILE_MRU_FILE16      "Dokumentum megnyitasa:"
 END
 
 STRINGTABLE
 BEGIN
-    ID_NEXT_PANE            "Switch to next Window"
-    ID_PREV_PANE            "Switch to last Window"
+    ID_NEXT_PANE            "Valtas a kovetkez? ablakra"
+    ID_PREV_PANE            "Valtas az utolso ablakra"
 END
 
 STRINGTABLE
 BEGIN
-    ID_WINDOW_SPLIT         "Split Windows"
+    ID_WINDOW_SPLIT         "Ablakok szetvalogatasa"
 END
 
 STRINGTABLE
 BEGIN
-    ID_EDIT_CLEAR           "Clear Selection"
-    ID_EDIT_CLEAR_ALL       "Clear All"
-    ID_EDIT_COPY            "Copy Selection"
-    ID_EDIT_CUT             "Cut Selection"
-    ID_EDIT_FIND            "Search/Find"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REPEAT          "Repeat Last Action"
-    ID_EDIT_REPLACE         "Replace"
-    ID_EDIT_SELECT_ALL      "Select All"
-    ID_EDIT_UNDO            "Undo"
-    ID_EDIT_REDO            "Redo"
+    ID_EDIT_CLEAR           "Kijeloles torlese"
+    ID_EDIT_CLEAR_ALL       "Minden kijeloles torlese"
+    ID_EDIT_COPY            "Kijelolt masolasa"
+    ID_EDIT_CUT             "Kijelolt kivagasa"
+    ID_EDIT_FIND            "Kereses"
+    ID_EDIT_PASTE           "Beillesztes"
+    ID_EDIT_REPEAT          "Utolso ismetlese"
+    ID_EDIT_REPLACE         "Csere"
+    ID_EDIT_SELECT_ALL      "Minden kijelolese"
+    ID_EDIT_UNDO            "Visszavon"
+    ID_EDIT_REDO            "Megis"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
-    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
+    ID_VIEW_TOOLBAR         "Az eszkoztar megjelenitese vagy elrejtese \n Eszkoztar"
+    ID_VIEW_STATUS_BAR      "Az allapotsor megjelenitese vagy elrejtese \n Allapotsor"
 END
 
 STRINGTABLE
 BEGIN
-    AFX_IDS_SCSIZE          "Change the Size of the Window"
-    AFX_IDS_SCMOVE          "Move the WIndow"
-    AFX_IDS_SCMINIMIZE      "Minimize"
-    AFX_IDS_SCMAXIMIZE      "Maximize"
-    AFX_IDS_SCNEXTWINDOW    "Next Window"
-    AFX_IDS_SCPREVWINDOW    "Last Window"
-    AFX_IDS_SCCLOSE         "Close Window"
+    AFX_IDS_SCSIZE          "Modositsa az ablak meretet"
+    AFX_IDS_SCMOVE          "Mozgassa az ablakot"
+    AFX_IDS_SCMINIMIZE      "Minimalizal"
+    AFX_IDS_SCMAXIMIZE      "Maximalizal"
+    AFX_IDS_SCNEXTWINDOW    "Kovetkez? ablak"
+    AFX_IDS_SCPREVWINDOW    "Eloz? ablak"
+    AFX_IDS_SCCLOSE         "Ablak bezarasa"
 END
 
 STRINGTABLE
 BEGIN
-    AFX_IDS_SCRESTORE       "Restore Window"
-    AFX_IDS_SCTASKLIST      "Task List"
+    AFX_IDS_SCRESTORE       "Visszaallitas"
+    AFX_IDS_SCTASKLIST      "Feladat lista"
 END
 
 STRINGTABLE
 BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
+    AFX_IDS_PREVIEW_CLOSE   "El?nezet bezarasa"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
+    ID_VIEW_INFO_BOX        "Mutassa meg a munkaadatokat a doboz megjelenitesehez vagy elrejtesehez."
 END
 
-#endif    // Coreano (Corea del Sud) resources
+#endif    // Korean (Korea) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// Ungherese resources
+// Hungarian resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
 LANGUAGE LANG_HUNGARIAN, SUBLANG_NEUTRAL
 #pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Kilépés",                     ID_APP_EXIT
+    END
+    POPUP "Szerkesztés"
+    BEGIN
+        MENUITEM "Visszavonás\tCtrl+Z",         ID_EDIT_UNDO
+        MENUITEM "Mégis\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Kivágás\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "Másolás\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "Beillesztés\tCtrl+V",         ID_EDIT_PASTE
+    END
+    POPUP "Nézet"
+    BEGIN
+        MENUITEM "Eszköztár",                   ID_VIEW_TOOLBAR
+        MENUITEM "Állapotsor",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "Megjelenítési Mód"
+        BEGIN
+            MENUITEM "Egyszerû",                    ID_VIEW_RENDERING_MODE_SOLID
+            MENUITEM "Drótvázas",                   ID_VIEW_RENDERING_MODE_WIRE_FRAME
+        END
+        MENUITEM "About Box(F11)",              ID_VIEW_INFO_BOX
+        MENUITEM SEPARATOR
+        MENUITEM "Eszköztár(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "Térképvezérlõ",               ID_VIEW_MAP
+        MENUITEM "Objektumok vezérlõ",          ID_VIEW_OBJECT
+        MENUITEM "Hatásvezérlõ",                ID_VIEW_EFFECT
+        MENUITEM SEPARATOR
+        MENUITEM "Perspektíva beállítása",      ID_VIEW_DLG_PERSPECTIVE
+    END
+    POPUP "Info"
+    BEGIN
+        MENUITEM "WorldEditor programról...",   ID_APP_ABOUT
+    END
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -435,10 +435,10 @@ CAPTION "WorldEditor About"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "WorldEditor ReMIX v40",IDC_STATIC,35,6,76,8,SS_NOPREFIX
+    LTEXT           "WorldEditor ReMIX v43",IDC_STATIC,35,6,76,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2003-2021",IDC_STATIC,35,16,119,8
-    LTEXT           "Author martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
-    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, and to all the guinea pigs! (such as CryPrime|iAce, Raiard, LeRenard and so on)",IDC_STATIC,35,36,159,29
+    LTEXT           "Készítette martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
+    LTEXT           "Külön köszönet Xunilnak, inyanak, Sophie Williamsnek, és mindenkinek (pl. Cry Prime | I Ace, Raiard, Le Renard és így tovább)\nForditotta: Arlinamid",IDC_STATIC,35,27,159,31
     DEFPUSHBUTTON   "Ok",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -699,106 +699,108 @@ BEGIN
     CONTROL         "Enable",IDC_MAP_ENVIRONMENT_WIND_STRENGTH_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,1053,37,10
 END
 
-IDD_MAP_TAB DIALOG 0, 0, 120, 16
+IDD_MAP_TAB DIALOGEX 0, 0, 120, 16
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    CONTROL         "Environment",IDC_MAP_TAB_ENVIRONMENT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,47,0,14,16
-    CONTROL         "Object",IDC_MAP_TAB_OBJECT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,32,0,14,16
-    CONTROL         "Terrain",IDC_MAP_TAB_TERRAIN,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,17,0,14,16
-    CONTROL         "File",IDC_MAP_TAB_FILE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,0,0,14,16
-    CONTROL         "Attribute",IDC_MAP_TAB_ATTRIBUTE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,65,0,14,16
+    CONTROL         "Environment",IDC_MAP_TAB_ENVIRONMENT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,69,0,24,16
+    CONTROL         "Object",IDC_MAP_TAB_OBJECT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,46,0,22,16
+    CONTROL         "Terrain",IDC_MAP_TAB_TERRAIN,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,25,0,20,16
+    CONTROL         "   ",IDC_MAP_TAB_FILE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,0,0,24,16
+    CONTROL         "Attribute",IDC_MAP_TAB_ATTRIBUTE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,94,0,23,16
 END
 
 IDD_EFFECT_TAB DIALOGEX 0, 0, 120, 186
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    PUSHBUTTON      "Load",IDC_EFFECT_LOAD_SCRIPT,10,28,45,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "Effect Script",IDC_STATIC,3,3,114,55
-    PUSHBUTTON      "Save",IDC_EFFECT_SAVE_SCRIPT,63,28,45,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_EFFECT_SCRIPT_NAME,9,14,100,11,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Betölt",IDC_EFFECT_LOAD_SCRIPT,10,28,45,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Effect Szkript",IDC_STATIC,3,3,114,55
+    PUSHBUTTON      "Ment",IDC_EFFECT_SAVE_SCRIPT,59,28,49,12,BS_NOTIFY | BS_FLAT
+    CTEXT           "Szkript neve",IDC_EFFECT_SCRIPT_NAME,9,14,100,11,SS_CENTERIMAGE | SS_SUNKEN
     LISTBOX         IDC_EFFECT_LIST,41,61,60,65,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Clear One",IDC_EFFECT_CLEAR_ONE,3,62,36,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "Clear All",IDC_EFFECT_CLEAR_ALL,3,75,36,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Töröl",IDC_EFFECT_CLEAR_ONE,3,62,36,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Töröl Mind",IDC_EFFECT_CLEAR_ALL,3,75,36,12,BS_NOTIFY | BS_FLAT
     CONTROL         "Particle",IDC_EFFECT_TAB_CREATE_PARTICLE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,103,61,14,15
     CONTROL         "Mesh",IDC_EFFECT_TAB_CREATE_MESH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,103,78,14,15
-    CONTROL         "Time Bar",IDC_EFFECT_TAB_TIME_BAR_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE | WS_TABSTOP,3,129,44,13
+    CONTROL         "Idõsáv",IDC_EFFECT_TAB_TIME_BAR_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE | WS_TABSTOP,3,129,44,13
     CONTROL         "Light",IDC_EFFECT_TAB_CREATE_LIGHT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,103,95,14,15
-    PUSHBUTTON      "Duplicate",IDC_EFFECT_DUPLICATE,3,88,36,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "Merge",IDC_EFFECT_MERGE_SCRIPT,10,42,45,12,BS_NOTIFY | BS_FLAT
-    CONTROL         "Sync ObjectTab",IDC_EFFECT_USING_SCENEOBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,133,65,12
-    CONTROL         "Show Char",IDC_EFFECT_SHOW_CHARACTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,145,63,12
-    PUSHBUTTON      "Show",IDC_EFFECT_SHOW,3,101,36,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "Hide",IDC_EFFECT_HIDE,3,114,36,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "Environment",IDC_EFFECT_TAB_ENVIRONMENT,3,159,44,13
-    PUSHBUTTON      "SaveAs",IDC_EFFECT_SAVE_AS_SCRIPT,63,42,45,12,BS_NOTIFY | BS_FLAT
-    CONTROL         "Show B.Sphere",IDC_EFFECT_SHOW_BOUDNING_SPHERE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,157,63,12
-    CONTROL         "B/Sphere",IDC_EFFECT_TAB_BOUNDING_SPHERE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE | WS_TABSTOP,3,144,44,13
-    CONTROL         "Show Cursor",IDC_EFFECT_SHOW_CURSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,169,63,12
+    PUSHBUTTON      "Duplikál",IDC_EFFECT_DUPLICATE,3,88,36,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Olvaszt",IDC_EFFECT_MERGE_SCRIPT,10,42,45,12,BS_NOTIFY | BS_FLAT
+    CONTROL         "Objektum szink.",IDC_EFFECT_USING_SCENEOBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,133,65,12
+    CONTROL         "Mutasd a karaktert",IDC_EFFECT_SHOW_CHARACTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,145,63,12
+    PUSHBUTTON      "Mutat",IDC_EFFECT_SHOW,3,101,36,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Elrejt",IDC_EFFECT_HIDE,3,114,36,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Környezet",IDC_EFFECT_TAB_ENVIRONMENT,3,159,44,13
+    PUSHBUTTON      "Ment másként",IDC_EFFECT_SAVE_AS_SCRIPT,59,42,49,12,BS_NOTIFY | BS_FLAT
+    CONTROL         "Mutasd a H. Gömböt.",IDC_EFFECT_SHOW_BOUDNING_SPHERE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,157,63,12
+    CONTROL         "Határ. gömb",IDC_EFFECT_TAB_BOUNDING_SPHERE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE | WS_TABSTOP,3,144,44,13
+    CONTROL         "Mutasd a kurzort",IDC_EFFECT_SHOW_CURSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,169,63,12
 END
 
-IDD_EFFECT_PARTICLE DIALOG 0, 0, 120, 820
+IDD_EFFECT_PARTICLE DIALOGEX 0, 0, 120, 820
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Particle",IDC_STATIC,3,1,114,475
-    GROUPBOX        "Billboard",IDC_STATIC,8,196,103,31
-    PUSHBUTTON      "Insert",IDC_EFFECT_PARTICLE_INSERT_TEXTURE,50,39,57,12,BS_FLAT
-    PUSHBUTTON      "Clear One",IDC_EFFECT_PARTICLE_CLEAR_ONE_TEXTURE,50,53,57,12,BS_FLAT
+    GROUPBOX        "Részecske",IDC_STATIC,3,1,114,475
+    GROUPBOX        "Tábla",IDC_STATIC,8,196,103,31
+    PUSHBUTTON      "Beillesztés",IDC_EFFECT_PARTICLE_INSERT_TEXTURE,50,39,57,12,BS_FLAT
+    PUSHBUTTON      "Töröl",IDC_EFFECT_PARTICLE_CLEAR_ONE_TEXTURE,50,53,57,12,BS_FLAT
     COMBOBOX        IDC_EFFECT_PARTICLE_TEXTURE_LIST,17,20,83,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "Texture",IDC_STATIC,8,10,103,114
-    GROUPBOX        "Emitter",IDC_STATIC,3,479,114,335
+    GROUPBOX        "Textúra",IDC_STATIC,8,10,103,114
+    GROUPBOX        "Kibocsátó",IDC_STATIC,3,479,114,335
     CONTROL         "",IDD_EFFECT_PARTICLE_PARTICLE_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,8,381,102,67
     COMBOBOX        IDD_EFFECT_PARTICLE_EMITTER_SHAPE,49,558,60,378,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "Geometry Shape",IDC_STATIC,9,546,103,129
-    CONTROL         "Emit From Edge",IDD_EFFECT_PARTICLE_EMITTER_EMIT_FROM_EDGE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,661,68,10
+    GROUPBOX        "Geometriai alakzat",IDC_STATIC,9,546,103,129
+    CONTROL         "Kibocsátás a szélérõl",IDD_EFFECT_PARTICLE_EMITTER_EMIT_FROM_EDGE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,661,78,10
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_SIZE_X,24,606,18,12,ES_AUTOHSCROLL
     LTEXT           "X",IDC_STATIC,16,608,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_SIZE_Y,56,606,18,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,48,608,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_SIZE_Z,86,606,18,12,ES_AUTOHSCROLL
     LTEXT           "Z",IDC_STATIC,78,608,8,8
-    GROUPBOX        "Size",IDC_STATIC,13,594,95,32
-    GROUPBOX        "Radius",IDC_STATIC,13,630,95,27
+    GROUPBOX        "Méret",IDC_STATIC,13,594,95,32
+    GROUPBOX        "Sugár",IDC_STATIC,13,630,95,27
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_RADIUS,43,640,35,12,ES_AUTOHSCROLL
     CONTROL         "",IDD_EFFECT_PARTICLE_EMITTER_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,9,741,102,67
     COMBOBOX        IDD_EFFECT_PARTICLE_EMITTER_GRAPH_LIST,47,724,63,386,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Time Event",IDC_STATIC,8,727,38,8
-    LTEXT           "AniType",IDC_STATIC,13,84,28,8
+    LTEXT           "Idõ esem.",IDC_STATIC,8,727,38,8
+    LTEXT           "Ani.Iránya",IDC_STATIC,13,84,28,8
     COMBOBOX        IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_TYPE,44,82,63,437,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "AniDelay",IDC_STATIC,12,98,30,8
+    LTEXT           "Ani.Késés",IDC_STATIC,12,98,31,8
     CONTROL         "Slider1",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_DELAY,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,98,44,10
-    CONTROL         "Random Start Frame",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_RANDOM_START_FRAME,
+    CONTROL         "Véletlenszerû indítás",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_RANDOM_START_FRAME,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,111,82,10
     COMBOBOX        IDC_EFFECT_PARTICLE_BILLBOARD_TYPE,20,209,78,357,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     COMBOBOX        IDD_EFFECT_PARTICLE_PARTICLE_GRAPH_LIST,47,365,63,386,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Time Event",IDC_STATIC,8,368,38,8
+    LTEXT           "Idõ esem.",IDC_STATIC,8,368,38,8
     LTEXT           "Static",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_DELAY_PRINT,87,98,20,10,SS_SUNKEN
-    GROUPBOX        "Option",IDC_STATIC,8,321,103,39
-    CONTROL         "Stretch Enable",IDC_EFFECT_PARTICLE_STRETCH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,333,63,10
-    GROUPBOX        "Rotation",IDC_STATIC,8,230,103,87
-    LTEXT           "Type",IDC_STATIC,17,241,18,8
+    GROUPBOX        "Opciók",IDC_STATIC,8,321,103,39
+    CONTROL         "Nyújtás engedélyezés",IDC_EFFECT_PARTICLE_STRETCH_FLAG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,333,78,10
+    GROUPBOX        "Forgás",IDC_STATIC,8,230,103,87
+    LTEXT           "Típus",IDC_STATIC,17,241,18,8
     COMBOBOX        IDC_EFFECT_PARTICLE_ROTATION_TYPE,43,239,63,437,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Speed",IDC_STATIC,14,256,22,8
+    LTEXT           "Sebesség",IDC_STATIC,8,256,32,8
     CONTROL         "Slider2",IDC_EFFECT_PARTICLE_ROTATION_SPEED,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,256,44,10
     LTEXT           "Static",IDC_EFFECT_PARTICLE_ROTATION_SPEED_PRINT,86,256,20,10,SS_SUNKEN
-    GROUPBOX        "Random Start Rotation",IDC_STATIC,13,270,93,40
-    LTEXT           "Begin",IDC_STATIC,23,282,19,8
-    LTEXT           "End",IDC_STATIC,25,295,14,8
+    GROUPBOX        "Véletlenszerû forgatás",IDC_STATIC,13,270,93,40
+    LTEXT           "Kezdés",IDC_STATIC,23,282,19,8
+    LTEXT           "Vége",IDC_STATIC,25,295,14,8
     EDITTEXT        IDC_EFFECT_PARTICLE_ROTATION_RANDOM_BEGIN,50,281,48,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EFFECT_PARTICLE_ROTATION_RANDOM_END,50,294,48,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Clear All",IDC_EFFECT_PARTICLE_CLEAR_ALL_TEXTURE,50,67,57,12,BS_FLAT
-    LTEXT           "Max Particle",IDC_STATIC,13,489,42,8
+    PUSHBUTTON      "Törlés Mind",IDC_EFFECT_PARTICLE_CLEAR_ALL_TEXTURE,50,67,57,12,BS_FLAT
+    LTEXT           "Max Részecske",IDC_STATIC,8,489,47,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_MAX_PARTICLE,61,487,42,13,ES_AUTOHSCROLL
-    GROUPBOX        "Cycle",IDC_STATIC,9,503,103,40
-    LTEXT           "Length",IDC_STATIC,21,513,23,8
+    GROUPBOX        "Ciklus",IDC_STATIC,9,503,103,40
+    LTEXT           "Hossz",IDC_STATIC,21,513,18,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LENGTH,54,511,42,13,ES_AUTOHSCROLL
-    CONTROL         "Loop",IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,527,32,10
-    GROUPBOX        "Random Velocity",IDC_STATIC,9,678,102,39
+    CONTROL         "Hurok",IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,527,32,10
+    GROUPBOX        "Véletlen gyorsítás",IDC_STATIC,9,678,102,39
     LTEXT           "X",IDC_STATIC,29,689,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_DIRECTION_X,23,700,20,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,60,689,8,8
@@ -808,26 +810,27 @@ BEGIN
     LTEXT           "+/-",IDC_STATIC,11,702,11,8
     LTEXT           "+/-",IDC_STATIC,43,702,11,8
     LTEXT           "+/-",IDC_STATIC,75,702,11,8
-    GROUPBOX        "Blend",IDC_STATIC,8,127,103,65
+    GROUPBOX        "Keverés",IDC_STATIC,8,127,103,65
     COMBOBOX        IDC_EFFECT_PARTICLE_BLEND_SRC,39,139,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "SRC",IDC_STATIC,17,142,15,8
+    LTEXT           "Forrás",IDC_STATIC,13,142,19,8
     COMBOBOX        IDC_EFFECT_PARTICLE_BLEND_DEST,39,155,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "DEST",IDC_STATIC,15,158,19,8
-    CTEXT           "Advanced Type",IDC_STATIC,13,573,32,17
+    LTEXT           "Cél",IDC_STATIC,15,158,19,8
+    CTEXT           "Egyéb beállítás",IDC_STATIC,13,573,32,17
     COMBOBOX        IDD_EFFECT_PARTICLE_EMITTER_ADVANCED_TYPE,49,576,60,386,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Type",IDC_STATIC,21,560,18,8
-    CONTROL         "Attach Enable",IDC_EFFECT_PARTICLE_ATTACH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,345,61,10
-    PUSHBUTTON      "Edit Color Animation",IDC_EFFECT_PARTICLE_COLOR_ANIMATION,15,454,89,16
+    LTEXT           "Típus",IDC_STATIC,21,560,18,8
+    CONTROL         "Csatolás engedélyezés",IDC_EFFECT_PARTICLE_ATTACH_FLAG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,345,83,10
+    PUSHBUTTON      "Szín animáció szerkesztése",IDC_EFFECT_PARTICLE_COLOR_ANIMATION,15,454,89,16
     CONTROL         "",IDC_EFFECT_PARTICLE_PREVIEW,"Static",SS_WHITERECT | WS_BORDER,12,39,36,40
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_LOOP_COUNT,54,525,42,13,ES_AUTOHSCROLL
-    LTEXT           "OPER",IDC_STATIC,14,174,22,10
+    LTEXT           "Mûvelet",IDC_STATIC,9,174,27,10
     COMBOBOX        IDC_EFFECT_PARTICLE_OPERATION_TYPE,39,172,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
 
-IDD_EFFECT_TIME_BAR DIALOG 0, 0, 407, 211
+IDD_EFFECT_TIME_BAR DIALOGEX 0, 0, 407, 211
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
-CAPTION "Time Bar"
-FONT 9, "Tahoma"
+CAPTION "Idõvonal"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     CONTROL         "Play",IDC_EFFECT_TIME_BAR_PLAY,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,101,2,14,16
     CONTROL         "",IDC_EFFECT_TIME_BAR_GRAPH,"Static",SS_GRAYFRAME | SS_NOTIFY,3,24,401,184
@@ -849,46 +852,47 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
     GROUPBOX        "Mesh",IDC_STATIC,3,1,114,488
-    GROUPBOX        "Billboard",IDC_STATIC,12,136,97,80
+    GROUPBOX        "Tábla",IDC_STATIC,12,136,97,80
     GROUPBOX        "Alpha",IDC_STATIC,12,220,97,177
     GROUPBOX        "Model",IDC_STATIC,8,12,103,46
     CTEXT           "Model Name",IDC_EFFECT_MESH_MODEL_NAME,13,38,93,12,SS_CENTERIMAGE | SS_SUNKEN
-    PUSHBUTTON      "Load",IDC_EFFECT_MESH_MODEL_LOAD,64,22,40,12,BS_FLAT
+    PUSHBUTTON      "Betöltés",IDC_EFFECT_MESH_MODEL_LOAD,64,22,40,12,BS_FLAT
     COMBOBOX        IDC_EFFECT_MESH_ALPHA_SRC,40,234,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "SRC",IDC_STATIC,18,237,15,8
+    LTEXT           "Forrás",IDC_STATIC,14,237,19,8
     COMBOBOX        IDC_EFFECT_MESH_ALPHA_DEST,40,250,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "DEST",IDC_STATIC,16,253,19,8
-    CONTROL         "Off",IDC_EFFECT_MESH_BILLBOARD_OFF,"Button",BS_AUTOCHECKBOX,21,147,25,10
-    CONTROL         "Look at Camera",IDC_EFFECT_MESH_BILLBOARD_ALL,"Button",BS_AUTOCHECKBOX,21,157,80,10
-    CONTROL         "Y Axis Rotation",IDC_EFFECT_MESH_BILLBOARD_Y,"Button",BS_AUTOCHECKBOX,21,167,72,10
-    CONTROL         "Enable",IDC_EFFECT_MESH_BLEND_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,220,38,10
-    GROUPBOX        "Texture Animation",IDC_STATIC,12,402,96,76
+    LTEXT           "Cél",IDC_STATIC,16,253,19,8
+    CONTROL         "Ki",IDC_EFFECT_MESH_BILLBOARD_OFF,"Button",BS_AUTOCHECKBOX,21,147,25,10
+    CONTROL         "Kamerába néz",IDC_EFFECT_MESH_BILLBOARD_ALL,"Button",BS_AUTOCHECKBOX,21,157,80,10
+    CONTROL         "Y tengely elforgatása",IDC_EFFECT_MESH_BILLBOARD_Y,
+                    "Button",BS_AUTOCHECKBOX,21,167,72,10
+    CONTROL         "Engedélyezés",IDC_EFFECT_MESH_BLEND_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,220,38,10
+    GROUPBOX        "Textúra Animáció",IDC_STATIC,12,402,96,76
     CONTROL         "Slider1",IDC_EFFECT_MESH_TEXTURE_ANIMATION_DELAY,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,35,427,47,10
-    LTEXT           "Delay",IDC_STATIC,15,427,19,8
-    CONTROL         "Loop",IDC_EFFECT_MESH_TEXTURE_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,413,28,10
+    LTEXT           "Késés",IDC_STATIC,15,427,19,8
+    CONTROL         "Hurok",IDC_EFFECT_MESH_TEXTURE_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,413,28,10
     CTEXT           "0",IDC_EFFECT_MESH_TEXTURE_ANIMATION_DELAY_PRINT,83,427,21,10,SS_CENTERIMAGE | SS_SUNKEN
-    GROUPBOX        "Mesh Animation",IDC_STATIC,8,63,102,45
+    GROUPBOX        "Mesh Animáció",IDC_STATIC,8,63,102,45
     CONTROL         "Slider1",IDC_EFFECT_MESH_ANIMATION_DELAY,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,94,55,10
-    LTEXT           "Delay",IDC_STATIC,11,94,19,8
+    LTEXT           "Késés",IDC_STATIC,11,94,19,8
     CTEXT           "0",IDC_EFFECT_MESH_ANIMATION_DELAY_PRINT,86,94,21,10,SS_CENTERIMAGE | SS_SUNKEN
     GROUPBOX        "",IDC_STATIC,8,118,104,365
     COMBOBOX        IDC_EFFECT_MESH_LIST,19,117,82,522,CBS_DROPDOWNLIST | WS_VSCROLL,WS_EX_TRANSPARENT
-    CONTROL         "Loop",IDC_EFFECT_MESH_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,78,28,10
-    PUSHBUTTON      "Apply to the whole",IDC_EFFECT_MESH_BILLBOARD_ACCEPT_ALL,27,198,67,12
-    PUSHBUTTON      "Apply to the whole",IDC_EFFECT_MESH_ALPHA_ACCEPT_ALL,26,377,67,12
-    PUSHBUTTON      "Apply to the whole",IDC_EFFECT_MESH_TEXTURE_ANIMATION_ACCEPT_ALL,27,442,67,12
-    LTEXT           "Start Frame",IDC_STATIC,16,461,38,8
-    EDITTEXT        IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME,57,460,19,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Apply",IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME_ACCEPT,80,460,24,11
-    LTEXT           "Factor",IDC_STATIC,16,271,21,8
+    CONTROL         "Hurok",IDC_EFFECT_MESH_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,78,28,10
+    PUSHBUTTON      "Alkalmazza az egészre",IDC_EFFECT_MESH_BILLBOARD_ACCEPT_ALL,27,198,71,12
+    PUSHBUTTON      "Alkalmazza az egészre",IDC_EFFECT_MESH_ALPHA_ACCEPT_ALL,26,377,71,12
+    PUSHBUTTON      "Alkalmazza az egészre",IDC_EFFECT_MESH_TEXTURE_ANIMATION_ACCEPT_ALL,27,442,70,12
+    LTEXT           "Kezdõ pont",IDC_STATIC,13,461,37,8
+    EDITTEXT        IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME,50,459,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Alkalmazz",IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME_ACCEPT,71,459,34,11
+    LTEXT           "Tényezõ",IDC_STATIC,13,271,26,8
     CONTROL         "",IDC_EFFECT_MESH_COLOR_FACTOR,"Static",SS_BLACKFRAME | SS_NOTIFY,40,270,64,11
-    LTEXT           "Oper.",IDC_STATIC,17,285,19,8
+    LTEXT           "Mód.",IDC_STATIC,17,285,16,8
     COMBOBOX        IDC_EFFECT_MESH_COLOR_OPERATION,40,284,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     CONTROL         "",IDD_EFFECT_MESH_ALPHA_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,16,305,88,67
     EDITTEXT        IDC_EFFECT_MESH_LOOP_COUNT,51,77,45,12,ES_AUTOHSCROLL
-    CONTROL         "Affected by movement direc.",IDC_EFFECT_MESH_BILLBOARD_MOVE,
+    CONTROL         "Mozgás iránya befolyásolja",IDC_EFFECT_MESH_BILLBOARD_MOVE,
                     "Button",BS_AUTOCHECKBOX | BS_MULTILINE,21,177,72,18
 END
 
@@ -896,23 +900,22 @@ IDD_EFFECT_TEXTURE DIALOGEX 0, 0, 120, 186
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Texture",IDC_STATIC,3,1,114,180
-    GROUPBOX        "Billboard",IDC_STATIC,8,75,103,47
+    GROUPBOX        "Textúra",IDC_STATIC,3,1,114,180
+    GROUPBOX        "Tábla",IDC_STATIC,8,75,103,47
     GROUPBOX        "Alpha",IDC_STATIC,8,126,103,45
-    PUSHBUTTON      "Load",IDC_EFFECT_PARTICLE_LOAD_TEXTURE,62,21,40,12,BS_FLAT
-    PUSHBUTTON      "Clear All",IDC_EFFECT_PARTICLE_CLEAR_ALL_TEXTURE,61,53,40,12,BS_FLAT
-    PUSHBUTTON      "Clear One",IDC_EFFECT_PARTICLE_CLEAR_ONE_TEXTURE,20,53,40,12,BS_FLAT
+    PUSHBUTTON      "Betöltés",IDC_EFFECT_PARTICLE_LOAD_TEXTURE,62,21,40,12,BS_FLAT
+    PUSHBUTTON      "Törlés Mind",IDC_EFFECT_PARTICLE_CLEAR_ALL_TEXTURE,61,53,40,12,BS_FLAT
+    PUSHBUTTON      "Töröl",IDC_EFFECT_PARTICLE_CLEAR_ONE_TEXTURE,20,53,40,12,BS_FLAT
     COMBOBOX        IDC_EFFECT_PARTICLE_TEXTURE_COMBO_BOX,16,35,90,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "Texture",IDC_STATIC,8,11,103,59
-    CONTROL         "Off",IDC_EFFECT_TEXTURE_BILLBOARD_OFF,"Button",BS_AUTOCHECKBOX,18,86,25,10
-    CONTROL         "Look at the Camera",IDC_EFFECT_TEXTURE_BILLBOARD_ALL,
-                    "Button",BS_AUTOCHECKBOX,18,96,80,10
-    CONTROL         "Rotate only Y axis.",IDC_EFFECT_TEXTURE_BILLBOARD_Y,
+    GROUPBOX        "Textúra",IDC_STATIC,8,11,103,59
+    CONTROL         "Ki",IDC_EFFECT_TEXTURE_BILLBOARD_OFF,"Button",BS_AUTOCHECKBOX,18,86,25,10
+    CONTROL         "Kamerába néz",IDC_EFFECT_TEXTURE_BILLBOARD_ALL,"Button",BS_AUTOCHECKBOX,18,96,80,10
+    CONTROL         "Forgás csak Y teng.",IDC_EFFECT_TEXTURE_BILLBOARD_Y,
                     "Button",BS_AUTOCHECKBOX,18,106,72,10
     COMBOBOX        IDC_EFFECT_TEXTURE_ALPHA_SRC,38,136,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "SRC",IDC_STATIC,16,138,15,8
+    LTEXT           "Forrás",IDC_STATIC,12,138,19,8
     COMBOBOX        IDC_EFFECT_TEXTURE_ALPHA_DEST,38,152,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "DEST",IDC_STATIC,14,154,19,8
+    LTEXT           "Cél",IDC_STATIC,14,154,19,8
 END
 
 IDD_MAP_TERRAIN DIALOGEX 0, 0, 120, 595
@@ -1129,15 +1132,15 @@ END
 
 IDD_DIALOG_TEXTURE_PROPERTY DIALOGEX 0, 0, 205, 206
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Texture Property"
+CAPTION "Textúra tulajdonságok"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "Ok",IDOK,45,182,50,14,BS_CENTER | BS_VCENTER
-    PUSHBUTTON      "Cancel",IDCANCEL,106,182,50,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Mégse",IDCANCEL,106,182,50,14,BS_CENTER | BS_VCENTER
     CTEXT           "Static",IDC_STATIC,9,8,188,12,SS_CENTERIMAGE,WS_EX_STATICEDGE
-    CONTROL         "Align Texture for Height",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | WS_TABSTOP,42,116,119,10
-    RTEXT           "Min Height",IDC_STATIC,8,133,34,13,SS_CENTERIMAGE,WS_EX_RIGHT
-    RTEXT           "Max Height",IDC_STATIC,2,151,41,13,SS_CENTERIMAGE,WS_EX_RIGHT
+    CONTROL         "Igazítsa a textúrát a magassághoz",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | WS_TABSTOP,42,116,119,10
+    RTEXT           "Min. mag.",IDC_STATIC,8,133,34,13,SS_CENTERIMAGE,WS_EX_RIGHT
+    RTEXT           "Max. mag.",IDC_STATIC,2,151,41,13,SS_CENTERIMAGE,WS_EX_RIGHT
     RTEXT           "UOffset",IDC_STATIC,9,80,27,13,SS_CENTERIMAGE,WS_EX_RIGHT
     RTEXT           "VOffset",IDC_STATIC,9,97,27,13,SS_CENTERIMAGE,WS_EX_RIGHT
     RTEXT           "UScale",IDC_STATIC,9,46,27,13,SS_CENTERIMAGE,WS_EX_RIGHT
@@ -1154,10 +1157,10 @@ BEGIN
     EDITTEXT        IDC_EDIT_VOFFSET,152,99,43,12,ES_RIGHT | ES_NOHIDESEL | ES_NUMBER | NOT WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_RIGHT
     EDITTEXT        IDC_EDIT_BEGIN,127,133,49,12,ES_RIGHT | ES_NOHIDESEL | ES_NUMBER | NOT WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_RIGHT
     EDITTEXT        IDC_EDIT_END,127,150,49,12,ES_RIGHT | ES_NOHIDESEL | ES_NUMBER | NOT WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_RIGHT
-    LTEXT           "meter",IDC_STATIC,179,135,21,8
-    LTEXT           "meter",IDC_STATIC,179,152,21,8
-    PUSHBUTTON      "Change Texture",IDC_BUTTON_CHANGE_TEX,45,25,56,14,BS_CENTER | BS_VCENTER
-    PUSHBUTTON      "Remove Texture",IDC_BUTTON_REMOVE_TEX,106,25,56,14,BS_CENTER | BS_VCENTER
+    LTEXT           "méter",IDC_STATIC,179,135,21,8
+    LTEXT           "méter",IDC_STATIC,179,152,21,8
+    PUSHBUTTON      "Textúra csere",IDC_BUTTON_CHANGE_TEX,45,25,56,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Textúra eltávolítása",IDC_BUTTON_REMOVE_TEX,106,25,66,14,BS_CENTER | BS_VCENTER
 END
 
 IDD_OBJECT_MODEL_ATTACH_COLLISION_PAGE DIALOG 0, 0, 110, 186
@@ -1191,18 +1194,18 @@ END
 
 IDD_DIALOG_NEWMAP DIALOGEX 0, 0, 209, 83
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "New Map"
+CAPTION "Új térkép"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,13,58,37,11,BS_FLAT
-    PUSHBUTTON      "Cancel",IDCANCEL,57,58,37,11,BS_FLAT
-    LTEXT           "Name",IDC_STATIC,10,6,20,8
+    DEFPUSHBUTTON   "OK",IDOK,13,58,37,13,BS_FLAT
+    PUSHBUTTON      "Mégse",IDCANCEL,57,58,37,13,BS_FLAT
+    LTEXT           "Név",IDC_STATIC,10,6,20,8
     EDITTEXT        IDC_EDIT_NEWMAP_NAME,55,4,128,12,ES_CENTER | ES_LOWERCASE | NOT WS_BORDER,WS_EX_STATICEDGE
-    LTEXT           "Size",IDC_STATIC,10,21,16,8
+    LTEXT           "Méret",IDC_STATIC,10,21,16,8
     EDITTEXT        IDC_EDIT_NEWMAP_SIZEX,55,20,25,12,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
     CTEXT           "x",IDC_STATIC,86,21,8,8,SS_CENTERIMAGE
     EDITTEXT        IDC_EDIT_NEWMAP_SIZEY,99,20,25,12,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
-    LTEXT           "TextureSet",IDC_STATIC,10,35,37,8
+    LTEXT           "Textúra fájl",IDC_STATIC,10,35,36,8
     EDITTEXT        IDC_EDIT_NEWMAP_TEXSET,55,35,128,12,ES_CENTER | ES_LOWERCASE | NOT WS_BORDER,WS_EX_STATICEDGE
 END
 
@@ -1315,14 +1318,14 @@ END
 
 IDD_DIALOG_PERSPECTIVE DIALOGEX 0, 0, 187, 61
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Perspective"
+CAPTION "Perspektíva beállítás"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    LTEXT           "Field of View",IDC_STATIC,11,11,43,8
+    LTEXT           "Látómezõ",IDC_STATIC,11,11,43,8
     CONTROL         "Slider1",IDC_DIALOG_PERSPECTIVE_FOV,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,10,88,11
     CTEXT           "Static",IDC_DIALOG_PERSPECTIVE_FOV_PRINT,147,10,31,9,0,WS_EX_STATICEDGE
-    LTEXT           "Near Distance",IDC_STATIC,9,28,47,8
-    LTEXT           "Far Distance",IDC_STATIC,14,44,42,8
+    LTEXT           "Közeli távolság",IDC_STATIC,9,28,47,8
+    LTEXT           "Nagy távolság",IDC_STATIC,10,42,44,8
     CONTROL         "Slider1",IDC_DIALOG_PERSPECTIVE_NEAR_DISTANCE,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,27,88,11
     CTEXT           "Static",IDC_DIALOG_PERSPECTIVE_NEAR_DISTANCE_PRINT,147,27,31,9,0,WS_EX_STATICEDGE
@@ -1331,21 +1334,21 @@ BEGIN
     CTEXT           "Static",IDC_DIALOG_PERSPECTIVE_FAR_DISTANCE_PRINT,147,44,31,9,0,WS_EX_STATICEDGE
 END
 
-IDD_OBJECT_MODEL_TYPE_CHARACTER_PAGE DIALOG 0, 0, 101, 148
+IDD_OBJECT_MODEL_TYPE_CHARACTER_PAGE DIALOGEX 0, 0, 101, 148
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    LTEXT           "Part Count",IDC_STATIC,6,6,35,8
-    EDITTEXT        IDC_OBJECT_MODEL_CHARACTER_PART_COUNT,45,4,50,12,ES_AUTOHSCROLL
-    GROUPBOX        "Default Hitting",IDC_STATIC,5,20,91,110
-    LTEXT           "Sound",IDC_STATIC,12,31,22,8
+    LTEXT           "Rész mennyiség",IDC_STATIC,6,6,50,8
+    EDITTEXT        IDC_OBJECT_MODEL_CHARACTER_PART_COUNT,59,4,36,12,ES_AUTOHSCROLL
+    GROUPBOX        "Alap ütés",IDC_STATIC,5,20,91,110
+    LTEXT           "Hang",IDC_STATIC,12,31,22,8
     EDITTEXT        IDC_OBJECT_MODEL_CHARACTER_SOUND_NAME,10,42,81,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_CHARACTER_LOAD_SOUND,50,29,40,12,BS_FLAT
-    LTEXT           "Effect",IDC_STATIC,12,55,19,8
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_CHARACTER_LOAD_EFFECT,52,113,40,12,BS_FLAT
-    PUSHBUTTON      "Hit Test",IDC_OBJECT_MODEL_CHARACTER_HIT_TEST,30,132,40,12,BS_FLAT
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_MODEL_CHARACTER_LOAD_SOUND,50,29,40,12,BS_FLAT
+    LTEXT           "Effekt",IDC_STATIC,12,55,19,8
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_MODEL_CHARACTER_LOAD_EFFECT,52,113,40,12,BS_FLAT
+    PUSHBUTTON      "Ütés teszt",IDC_OBJECT_MODEL_CHARACTER_HIT_TEST,30,132,40,12,BS_FLAT
     LISTBOX         IDC_OBJECT_MODEL_CHARACTER_EFFECT_NAME_LIST,5,65,90,44,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Clear One",IDC_OBJECT_MODEL_CHARACTER_CLEAR_ONE_EFFECT,9,113,40,12,BS_FLAT
+    PUSHBUTTON      "Törlés",IDC_OBJECT_MODEL_CHARACTER_CLEAR_ONE_EFFECT,9,113,40,12,BS_FLAT
 END
 
 IDD_MAP_ATTRIBUTE DIALOGEX 0, 0, 120, 719
@@ -1418,81 +1421,81 @@ CAPTION "Goto"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,13,24,37,11
-    PUSHBUTTON      "Cancel",IDCANCEL,57,24,37,11
+    PUSHBUTTON      "Mégse",IDCANCEL,57,24,37,11
     EDITTEXT        IDC_EDIT_GOTO_POSITION_X,10,7,35,12,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
     CTEXT           "x",-1,50,8,8,8,SS_CENTERIMAGE
     EDITTEXT        IDC_EDIT_GOTO_POSITION_Y,62,7,35,12,ES_CENTER | NOT WS_BORDER,WS_EX_STATICEDGE
 END
 
-IDD_OBJECT_MODEL_TYPE_EQUIPMENT_PAGE DIALOG 0, 0, 101, 178
+IDD_OBJECT_MODEL_TYPE_EQUIPMENT_PAGE DIALOGEX 0, 0, 101, 178
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    LTEXT           "Sound",IDC_STATIC,10,33,22,8
+    LTEXT           "Hang",IDC_STATIC,10,33,22,8
     EDITTEXT        IDC_OBJECT_MODEL_EQUIPMENT_SOUND_NAME,9,45,84,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_SOUND,53,31,40,12,BS_FLAT
-    LTEXT           "Effect",IDC_STATIC,9,60,19,8
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_EFFECT,53,108,40,12,BS_FLAT
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_SOUND,53,31,40,12,BS_FLAT
+    LTEXT           "Effekt",IDC_STATIC,9,60,19,8
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_EFFECT,53,108,40,12,BS_FLAT
     LISTBOX         IDC_OBJECT_MODEL_EQUIPMENT_EFFECT_LIST,5,68,91,37,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Clear One",IDC_OBJECT_MODEL_EQUIPMENT_CLEAR_ONE_EFFECT,9,108,40,12,BS_FLAT
-    LTEXT           "Icon",IDC_STATIC,5,127,15,8
+    PUSHBUTTON      "Törlés",IDC_OBJECT_MODEL_EQUIPMENT_CLEAR_ONE_EFFECT,9,108,40,12,BS_FLAT
+    LTEXT           "Ikon",IDC_STATIC,5,127,15,8
     EDITTEXT        IDC_OBJECT_MODEL_EQUIPMENT_ICON_IMAGE_NAME,5,137,91,12,ES_AUTOHSCROLL
-    LTEXT           "Drop Model",IDC_STATIC,5,152,38,8
+    LTEXT           "Kiesett Model",IDC_STATIC,5,152,45,8
     EDITTEXT        IDC_OBJECT_MODEL_EQUIPMENT_DROP_MODEL_NAME,5,162,91,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_ICON_IMAGE,56,125,40,12,BS_FLAT
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_DROP_MODEL,56,150,40,12,BS_FLAT
-    GROUPBOX        "Hit Data",IDC_STATIC,4,20,93,104
-    LTEXT           "Type",IDC_STATIC,7,6,18,8
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_ICON_IMAGE,56,125,40,12,BS_FLAT
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_DROP_MODEL,56,150,40,12,BS_FLAT
+    GROUPBOX        "Hit adatok",IDC_STATIC,4,20,93,104
+    LTEXT           "Típus",IDC_STATIC,7,6,18,8
     COMBOBOX        IDC_OBJECT_MODEL_EQUIPMENT_TYPE,31,3,63,584,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
 
-IDD_OBJECT_MODEL_ATTACH_OBJECT_PAGE DIALOG 0, 0, 110, 188
+IDD_OBJECT_MODEL_ATTACH_OBJECT_PAGE DIALOGEX 0, 0, 110, 188
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Object",IDC_STATIC,4,4,101,178
-    LTEXT           "Model File",IDC_STATIC,10,18,35,8
+    GROUPBOX        "Tárgy",IDC_STATIC,4,4,101,178
+    LTEXT           "Model Fájl",IDC_STATIC,10,18,35,8
     EDITTEXT        IDD_OBJECT_PAGE_MODEL_FILE,8,30,93,12,ES_AUTOHSCROLL | ES_READONLY
-    PUSHBUTTON      "Load",IDC_OBJECT_PAGE_LOAD_MODEL,61,15,40,12,BS_FLAT
+    PUSHBUTTON      "Betöltés",IDC_OBJECT_PAGE_LOAD_MODEL,61,15,40,12,BS_FLAT
 END
 
 IDD_EFFECT_LIGHT DIALOGEX 0, 0, 120, 323
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Color",IDC_STATIC,3,54,114,72
-    LTEXT           "Ambient",IDC_STATIC,8,66,27,8
-    LTEXT           "Diffuse",IDC_STATIC,11,80,23,8
+    GROUPBOX        "Szín",IDC_STATIC,3,54,114,72
+    LTEXT           "Környezet",IDC_STATIC,8,66,32,8
+    LTEXT           "Szórás",IDC_STATIC,11,80,23,8
     CONTROL         "",IDC_EFFECT_LIGHT_AMBIENT,"Static",SS_BLACKFRAME | SS_NOTIFY,40,64,40,10
     CONTROL         "",IDC_EFFECT_LIGHT_DIFFUSE,"Static",SS_BLACKFRAME | SS_NOTIFY,40,79,40,10
     CONTROL         "Slider1",IDC_EFFECT_LIGHT_AMBIENT_ALPHA,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,81,64,35,10
     CONTROL         "Slider1",IDC_EFFECT_LIGHT_DIFFUSE_ALPHA,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,81,80,35,10
-    GROUPBOX        "Range",IDC_STATIC,3,129,114,122
+    GROUPBOX        "Távolság",IDC_STATIC,3,129,114,122
     EDITTEXT        IDC_EFFECT_LIGHT_RANGE,36,140,66,12,ES_AUTOHSCROLL
-    GROUPBOX        "Attenuation ",IDC_STATIC,3,255,114,64
-    LTEXT           "Constant",IDC_STATIC,8,268,30,8
-    LTEXT           "Linear",IDC_STATIC,12,284,21,8
-    LTEXT           "Square",IDC_STATIC,11,300,24,8
+    GROUPBOX        "Csillapítás",IDC_STATIC,3,255,114,64
+    LTEXT           "Konstans",IDC_STATIC,8,268,29,8
+    LTEXT           "Lineáris",IDC_STATIC,9,286,21,8
+    LTEXT           "Négyzetes",IDC_STATIC,5,300,36,8
     EDITTEXT        IDC_EFFECT_LIGHT_ATT0,42,267,67,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EFFECT_LIGHT_ATT1,42,283,67,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EFFECT_LIGHT_ATT2,42,299,67,12,ES_AUTOHSCROLL
     LTEXT           "Max",IDC_STATIC,11,141,19,12
     CONTROL         "",IDD_EFFECT_LIGHT_RANGE_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,8,168,102,67
-    GROUPBOX        "Duration",IDC_STATIC,3,0,114,50
+    GROUPBOX        "Idõtartam",IDC_STATIC,3,0,114,50
     EDITTEXT        IDC_EFFECT_LIGHT_DURATION,14,15,92,12,ES_AUTOHSCROLL
     LTEXT           "Max",IDC_STATIC,6,158,19,12
     LTEXT           "0",IDC_STATIC,7,239,19,12
-    LTEXT           "[Reference] \nAmbient: no normal effect  \nDiffuse: normal effect available",IDC_STATIC,9,95,101,26
-    CONTROL         "Loop",IDC_EFFECT_LIGHT_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,32,30,12
+    LTEXT           "[Referencia] \nKörnyezet: nincs normál hatás \nSzórás: normál hatás érhetõ el",IDC_STATIC,9,95,101,26
+    CONTROL         "Hurok",IDC_EFFECT_LIGHT_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,32,30,12
     EDITTEXT        IDC_EFFECT_LIGHT_LOOP_COUNT,47,32,59,12,ES_AUTOHSCROLL
 END
 
-IDD_COLOR_ANIMATION_DIALOG DIALOG 0, 0, 299, 59
+IDD_COLOR_ANIMATION_DIALOG DIALOGEX 0, 0, 299, 59
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Color Animation"
-FONT 10, "Tahoma"
+CAPTION "Szín Animáció"
+FONT 10, "Tahoma", 0, 0, 0x0
 BEGIN
     CONTROL         "",IDC_RGB_BAR,"Static",SS_BLACKFRAME | SS_NOTIFY | NOT WS_VISIBLE,12,12,223,11
     CONTROL         "Slider1",IDC_COLOR_ANIMATION_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,245,34,40,8
@@ -1502,7 +1505,7 @@ END
 
 IDD_FLOAT_EDIT_DIALOG DIALOGEX 0, 0, 142, 162
 STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "Time - Value Edit"
+CAPTION "Idõ - Érték szerkesztése"
 FONT 10, "Tahoma", 0, 0, 0x1
 BEGIN
     CONTROL         "List1",IDC_FLOAT_EDIT_LIST_TIME,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_EDITLABELS | LVS_NOSORTHEADER | WS_GROUP | WS_TABSTOP,0,0,53,162,WS_EX_CLIENTEDGE
@@ -1521,12 +1524,12 @@ END
 
 IDD_DIALOG_INITBASETEXTURE DIALOGEX 0, 0, 177, 99
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Basic texture initialization"
+CAPTION "Alap textúra beállítás"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,105,50,37,11
-    PUSHBUTTON      "Cancel",IDCANCEL,105,71,37,11
-    CTEXT           "After selecting \n a base texture to apply, \n press 'OK' button",IDC_STATIC,89,13,73,32
+    PUSHBUTTON      "Mégse",IDCANCEL,105,71,37,11
+    CTEXT           "Miután kiválasztottad \n az alap textúrát, alkalmazásához \n nyomj 'OK' -t",IDC_STATIC,89,13,73,32
     CONTROL         "List2",IDC_LIST_TEXTURE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,3,84,93
 END
 
@@ -1534,7 +1537,7 @@ IDD_EFFECT_SOUND DIALOGEX 0, 0, 120, 257
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    CTEXT           "Sound",IDC_STATIC,0,0,119,20,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Hang",IDC_STATIC,0,0,119,20,SS_CENTERIMAGE,WS_EX_STATICEDGE
 END
 
 IDD_MAP_OBJECT_PROPERTY_PAGE_EFFECT DIALOG 0, 0, 177, 205
@@ -1706,11 +1709,11 @@ END
 
 IDD_DIALOG_CHANGE_BASEXY DIALOGEX 0, 0, 187, 98
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Change Base Location"
+CAPTION "Kezdõpont beállítása"
 FONT 10, "System", 0, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,28,69,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,109,69,50,14
+    PUSHBUTTON      "Mégse",IDCANCEL,109,69,50,14
     CTEXT           "X",IDC_STATIC,33,19,8,8,SS_CENTERIMAGE | NOT WS_GROUP
     CTEXT           "Y",IDC_STATIC,33,40,8,8,SS_CENTERIMAGE | NOT WS_GROUP
     CTEXT           "cm",IDC_STATIC,140,19,11,8,SS_CENTERIMAGE | NOT WS_GROUP
@@ -1750,10 +1753,10 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,52,79,75,10
 END
 
-IDD_EFFECT_TRANSLATION DIALOG 0, 0, 67, 43
+IDD_EFFECT_TRANSLATION DIALOGEX 0, 0, 67, 43
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Translation"
-FONT 9, "Tahoma"
+CAPTION "Átvitel"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     EDITTEXT        IDC_EFFECT_TRANSLATION_X,14,3,50,12,ES_AUTOHSCROLL
     LTEXT           "X",IDC_STATIC,5,5,8,8
@@ -1770,22 +1773,22 @@ BEGIN
     GROUPBOX        "Static",IDC_STATIC,2,2,116,42
 END
 
-IDD_EFFECT_BOUNDING_SPHERE DIALOG 0, 0, 99, 101
+IDD_EFFECT_BOUNDING_SPHERE DIALOGEX 0, 0, 108, 102
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
-CAPTION "Bounding Sphere"
-FONT 9, "Tahoma"
+CAPTION "Határoló gömb"
+FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    LTEXT           "Radius",IDC_STATIC,9,5,23,8
+    LTEXT           "Sugár",IDC_STATIC,9,5,23,8
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_RADIUS,35,3,55,13,ES_AUTOHSCROLL
-    GROUPBOX        "Position",IDC_STATIC,3,19,93,62
+    GROUPBOX        "Pozició",IDC_STATIC,3,19,102,62
     LTEXT           "X",IDC_STATIC,8,33,8,8
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_POS_X,20,29,70,13,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,8,49,8,8
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_POS_Y,20,45,70,13,ES_AUTOHSCROLL
     LTEXT           "Z",IDC_STATIC,8,63,8,8
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_POS_Z,20,59,70,13,ES_AUTOHSCROLL
-    CONTROL         "Bounding Sphere Enable",IDC_EFFECT_BOUNDING_SPHERE_ENABLE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,88,93,10
+    CONTROL         "Határoló gömb engedélyezése",IDC_EFFECT_BOUNDING_SPHERE_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,89,110,10
 END
 
 IDD_MAP_ARRANGE_HEIGHT DIALOGEX 0, 0, 187, 113
@@ -1858,7 +1861,7 @@ GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
-        BOTTOMMARGIN, 73
+        BOTTOMMARGIN, 58
     END
 
     IDD_OBJECT_MODEL, DIALOG
@@ -2128,9 +2131,9 @@ BEGIN
     IDD_EFFECT_BOUNDING_SPHERE, DIALOG
     BEGIN
         LEFTMARGIN, 3
-        RIGHTMARGIN, 96
+        RIGHTMARGIN, 105
         TOPMARGIN, 3
-        BOTTOMMARGIN, 98
+        BOTTOMMARGIN, 99
     END
 
     IDD_MAP_ARRANGE_HEIGHT, DIALOG
@@ -2234,7 +2237,112 @@ BEGIN
     0
 END
 
-#endif    // Ungherese resources
+IDD_MAP_TAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_COLOR_ANIMATION_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_CHANGE_BASEXY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_GOTO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INITBASETEXTURE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_NEWMAP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PERSPECTIVE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_TEXTURE_PROPERTY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_BOUNDING_SPHERE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_LIGHT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_MESH AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_PARTICLE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_SOUND AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_TAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_TEXTURE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_TIME_BAR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EFFECT_TRANSLATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FLOAT_EDIT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OBJECT_MODEL_TYPE_EQUIPMENT_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OBJECT_MODEL_TYPE_CHARACTER_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OBJECT_MODEL_ATTACH_OBJECT_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Hungarian resources
 /////////////////////////////////////////////////////////////////////////////
 
 
