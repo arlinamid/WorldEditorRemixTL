@@ -205,9 +205,6 @@
     <Image Include="..\Sample\res\fly_type_sine.bmp">
       <Filter>Resources</Filter>
     </Image>
-    <Image Include="..\Sample\res\map_file.png">
-      <Filter>File di risorse</Filter>
-    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Sample\res\WorldEditor.rc2">
